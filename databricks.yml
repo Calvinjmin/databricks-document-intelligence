@@ -1,0 +1,40 @@
+bundle:
+  name: cjm-ai-functions
+
+# Workspace host is configured via CLI profile (not hardcoded here)
+
+sync:
+  include:
+    - "*.py"
+    - "*.yaml"
+    - "*.txt"
+    - "static/**"
+    - "frontend/dist/**"
+  exclude:
+    - "node_modules/**"
+    - "frontend/src/**"
+    - "frontend/public/**"
+    - "__pycache__/**"
+    - "*.pyc"
+    - ".env*"
+    - ".git/**"
+
+resources:
+  apps:
+    cjm-ai-functions:
+      name: cjm-ai-functions
+      description: "AI Document Processor using Databricks AI Functions"
+      
+variables:
+  databricks_host:
+    description: "Databricks workspace URL"
+  
+  databricks_token:
+    description: "Databricks access token"
+  
+  warehouse_id:
+    description: "SQL Warehouse ID"
+  
+  volume_path:
+    description: "Unity Catalog Volume path"
+

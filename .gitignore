@@ -5,12 +5,16 @@ __pycache__/
 venv/
 .venv/
 
-# Environment variables
+# Environment variables (DO NOT COMMIT)
 .env
 .env.*
+!.env.example
 
 # Node
 node_modules/
+
+# Build output
+frontend/dist/
 
 # OS
 .DS_Store
@@ -18,3 +22,6 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+
+# Databricks
+.databricks/

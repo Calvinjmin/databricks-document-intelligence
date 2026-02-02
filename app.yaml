@@ -1,0 +1,12 @@
+command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8080"]
+
+env:
+  - name: DATABRICKS_HOST
+    value: ${var.databricks_host}
+  - name: DATABRICKS_TOKEN
+    value: ${var.databricks_token}
+  - name: DATABRICKS_WAREHOUSE_ID
+    value: ${var.warehouse_id}
+  - name: UNITY_CATALOG_VOLUME_PATH
+    value: ${var.volume_path}
+

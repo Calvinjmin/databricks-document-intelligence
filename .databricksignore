@@ -1,0 +1,49 @@
+# Databricks workspace upload ignore file
+# Files and directories listed here will not be uploaded to Databricks workspace
+
+# Node modules - not needed, we use built files
+node_modules/
+frontend/node_modules/
+
+# Frontend source - not needed, we use built files
+frontend/src/
+frontend/public/
+frontend/eslint.config.js
+frontend/vite.config.js
+frontend/package.json
+frontend/package-lock.json
+frontend/README.md
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment files
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Development scripts
+start.sh
+
+# Documentation (optional - comment out if you want to include)
+# README.md
+# DATABRICKS_APP_DEPLOY.md
+
